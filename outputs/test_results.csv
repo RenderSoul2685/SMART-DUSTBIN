@@ -1,0 +1,8 @@
+Test_ID,Test_Case,Expected,Actual,Result
+1,No object,Lid closed,Lid closed,PASS
+2,Hand detected,Lid opens,Lid opens,PASS
+3,25% bin,Normal,Normal,PASS
+4,50% bin,Normal,Normal,PASS
+5,75% bin,Normal,Normal,PASS
+6,90% bin,Alert activated,Alert activated,PASS
+7,Full bin,Red LED+Buzzer,Red LED+Buzzer,PASS

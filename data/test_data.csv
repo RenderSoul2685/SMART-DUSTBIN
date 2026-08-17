@@ -1,0 +1,6 @@
+Test_ID,Test,Input,Expected_Result,Actual_Result,Status
+1,Object Detection,No object,Lid remains closed,Lid closed,PASS
+2,Object Detection,Hand near sensor,Lid opens,Lid opened,PASS
+3,50% Fill,20 cm distance,Normal status,Normal status,PASS
+4,90% Fill,5 cm distance,Full alert,Full alert,PASS
+5,Full Bin,2 cm distance,Red LED and buzzer,Red LED and buzzer,PASS

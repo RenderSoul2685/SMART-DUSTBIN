@@ -1,0 +1,7 @@
+Distance_cm,Bin_Height_cm,Fill_Level_cm,Fill_Percentage,Status
+38,40,2,5,NORMAL
+30,40,10,25,NORMAL
+20,40,20,50,NORMAL
+10,40,30,75,NORMAL
+5,40,35,87.5,FULL
+2,40,38,95,FULL

@@ -1,0 +1,23 @@
+SMART DUSTBIN SYSTEM
+====================
+
+System Started
+
+Object Distance: 35 cm
+Lid Status: CLOSED
+
+Object Distance: 8 cm
+Object Detected!
+Lid Status: OPEN
+
+Lid Status: CLOSED
+
+Waste Distance: 20 cm
+Fill Percentage: 50%
+Bin Status: NORMAL
+
+Waste Distance: 5 cm
+Fill Percentage: 87%
+Bin Status: FULL
+Red LED: ON
+Buzzer: ON

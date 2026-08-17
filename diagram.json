@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "Smart Dustbin",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 250, "left": 300, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": 50, "left": 100, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic2", "top": 50, "left": 550, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 350, "left": 50, "attrs": {} },
+    { "type": "wokwi-ssd1306", "id": "oled1", "top": 60, "left": 320, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-led", "id": "led_green", "top": 420, "left": 400, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_red", "top": 420, "left": 460, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r_green", "top": 470, "left": 400, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_red", "top": 470, "left": 460, "attrs": { "value": "220" } },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 380, "left": 530, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "uno:5V", "red", [] ],
+    [ "ultrasonic1:GND", "uno:GND.1", "black", [] ],
+    [ "ultrasonic1:TRIG", "uno:2", "blue", [] ],
+    [ "ultrasonic1:ECHO", "uno:3", "green", [] ],
+    [ "ultrasonic2:VCC", "uno:5V", "red", [] ],
+    [ "ultrasonic2:GND", "uno:GND.1", "black", [] ],
+    [ "ultrasonic2:TRIG", "uno:4", "blue", [] ],
+    [ "ultrasonic2:ECHO", "uno:5", "green", [] ],
+    [ "servo1:V+", "uno:5V", "red", [] ],
+    [ "servo1:GND", "uno:GND.2", "black", [] ],
+    [ "servo1:PWM", "uno:9", "orange", [] ],
+    [ "oled1:VCC", "uno:5V", "red", [] ],
+    [ "oled1:GND", "uno:GND.2", "black", [] ],
+    [ "oled1:SDA", "uno:A4", "blue", [] ],
+    [ "oled1:SCL", "uno:A5", "yellow", [] ],
+    [ "uno:6", "r_green:1", "green", [] ],
+    [ "r_green:2", "led_green:A", "green", [] ],
+    [ "led_green:C", "uno:GND.3", "black", [] ],
+    [ "uno:7", "r_red:1", "red", [] ],
+    [ "r_red:2", "led_red:A", "red", [] ],
+    [ "led_red:C", "uno:GND.3", "black", [] ],
+    [ "uno:8", "buzzer1:2", "purple", [] ],
+    [ "buzzer1:1", "uno:GND.3", "black", [] ]
+  ],
+  "dependencies": {}
+}
