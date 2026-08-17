@@ -10,6 +10,12 @@ When the waste reaches a predefined threshold, the system generates an alert usi
 
 The project can be implemented using real hardware or tested virtually using a simulator such as **Wokwi**.
 
+
+## 🚀 Live Demo
+
+Run and explore the Smart Dustbin project directly in Wokwi:
+
+👉 [Open Smart Dustbin Live Demo](https://wokwi.com/projects/472601871673951233)
 ---
 
 ## 2. Problem Statement
